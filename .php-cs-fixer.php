@@ -7,8 +7,8 @@ $finder = PhpCsFixer\Finder::create()
 ;
 
 $namespace = 'Re Message';
-$projectTitle = 'The project title';
-$projectName = 'The project name';
+$projectTitle = 'Re Message PHP CS Fixer rule set';
+$projectName = 'ruleset';
 $currentYear = date('Y');
 
 $header = <<<EOF
@@ -19,7 +19,11 @@ $header = <<<EOF
     @link      https://dev.remessage.ru/packages/{$projectName}
     @copyright Copyright (c) 2018-{$currentYear} {$namespace}
     @author    Oleg Kozlov <h1karo@remessage.ru>
+    @license   Apache License 2.0
     @license   https://legal.remessage.ru/licenses/{$projectName}
+
+    For the full copyright and license information, please view the LICENSE
+    file that was distributed with this source code.
     EOF;
 
 $config = new PhpCsFixer\Config();
