@@ -1,8 +1,8 @@
 {
-    "name": "remessage/php-project-template",
-    "description": "PHP Project Template",
+    "name": "remessage/ruleset",
+    "description": "PHP CS Fixer rule set",
     "type": "project",
-    "license": "proprietary",
+    "license": "Apache-2.0",
     "homepage": "https://remessage.ru/",
     "authors": [
         {
@@ -13,12 +13,12 @@
     ],
     "autoload": {
         "psr-4": {
-            "RM\\": "src/"
+            "RM\\Style\\RuleSet\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "RM\\Tests\\": "tests/"
+            "RM\\Style\\RuleSet\\Tests\\": "tests/"
         }
     },
     "require": {
