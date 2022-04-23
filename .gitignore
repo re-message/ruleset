@@ -1,0 +1,16 @@
+/.idea/
+
+###> composer ###
+composer.lock
+/vendor/
+###< composer ###
+
+###> phpunit ###
+/.phpunit.result.cache
+/phpunit.xml
+/coverage/
+###< phpunit ###
+
+###> friendsofphp/php-cs-fixer ###
+/.php-cs-fixer.cache
+###< friendsofphp/php-cs-fixer ###
