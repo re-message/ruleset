@@ -23,6 +23,7 @@ $header = <<<EOF
     EOF;
 
 $config = new PhpCsFixer\Config();
+
 return $config
     ->setRules(
         [
