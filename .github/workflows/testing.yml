@@ -61,8 +61,3 @@ jobs:
 
       - name: PHP Security Checker
         uses: StephaneBour/actions-php-security-checker@1.2
-
-      - uses: actions/upload-artifact@v1
-        with:
-          name: Coverage report
-          path: coverage
