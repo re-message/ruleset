@@ -26,9 +26,6 @@ jobs:
       - name: Setup problem matchers for PHP
         run: echo "::add-matcher::${{ runner.tool_cache }}/php.json"
 
-      - name: Setup problem matchers for PHPUnit
-        run: echo "::add-matcher::${{ runner.tool_cache }}/phpunit.json"
-
       - name: Get Composer Cache Directory
         id: composer-cache-dir
         run: |
@@ -64,13 +61,6 @@ jobs:
 
       - name: PHP Security Checker
         uses: StephaneBour/actions-php-security-checker@1.2
-
-      - name: Run PHPUnit tests
-        run: |
-          php vendor/bin/phpunit \
-          --coverage-text \
-          --coverage-html=coverage/phpunit/html \
-          --coverage-clover=coverage/phpunit/clover.xml
 
       - uses: actions/upload-artifact@v1
         with:
