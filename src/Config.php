@@ -20,6 +20,8 @@ use PhpCsFixer\Config as ParentConfig;
 
 class Config extends ParentConfig
 {
+    private ?string $header = null;
+
     public function __construct()
     {
         parent::__construct('remessage');
@@ -27,6 +29,15 @@ class Config extends ParentConfig
         // remove default rules
         $this->setRules([]);
         $this->setRiskyAllowed(true);
+    }
+
+    public function getRules(): array
+    {
+        return array_merge(
+            $this->getDefaultRules(),
+            $this->getHeaderRules(),
+            parent::getRules(),
+        );
     }
 
     protected function getDefaultRules(): array
@@ -61,8 +72,26 @@ class Config extends ParentConfig
         ];
     }
 
-    public function getRules(): array
+    protected function getHeaderRules(): array
     {
-        return array_merge($this->getDefaultRules(), parent::getRules());
+        if (null === $this->header) {
+            return [];
+        }
+
+        return [
+            'header_comment' => [
+                'header' => $this->header,
+                'comment_type' => 'comment',
+                'location' => 'after_open',
+                'separate' => 'bottom',
+            ],
+        ];
+    }
+
+    public function setHeader(?string $header): static
+    {
+        $this->header = $header;
+
+        return $this;
     }
 }
