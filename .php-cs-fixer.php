@@ -43,15 +43,6 @@ $header = <<<EOF
 $config = new RM\Style\RuleSet\Config();
 
 return $config
-    ->setRules(
-        [
-            'header_comment' => [
-                'header' => $header,
-                'comment_type' => 'comment',
-                'location' => 'after_open',
-                'separate' => 'bottom',
-            ],
-        ]
-    )
+    ->setHeader($header)
     ->setFinder($finder)
 ;
