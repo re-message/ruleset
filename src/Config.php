@@ -44,8 +44,8 @@ class Config extends ParentConfig
     {
         return [
             '@PSR12' => true,
-            '@Symfony' => true,
             '@PhpCsFixer' => true,
+            '@Symfony' => true,
             '@DoctrineAnnotation' => true,
             '@PHP80Migration:risky' => true,
             '@PHP81Migration' => true,
