@@ -49,6 +49,7 @@ class Config extends ParentConfig
             '@DoctrineAnnotation' => true,
             '@PHP80Migration:risky' => true,
             '@PHP81Migration' => true,
+            '@PHP82Migration' => true,
             'ordered_imports' => [
                 'sort_algorithm' => 'alpha',
                 'imports_order' => ['class', 'function', 'const'],
