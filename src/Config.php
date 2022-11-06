@@ -50,6 +50,11 @@ class Config extends ParentConfig
             '@PHP80Migration:risky' => true,
             '@PHP81Migration' => true,
             '@PHP82Migration' => true,
+            'global_namespace_import' => [
+                'import_classes' => true,
+                'import_constants' => true,
+                'import_functions' => true,
+            ],
             'ordered_imports' => [
                 'sort_algorithm' => 'alpha',
                 'imports_order' => ['class', 'function', 'const'],
