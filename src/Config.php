@@ -75,6 +75,10 @@ class Config extends ParentConfig
             'phpdoc_to_comment' => [
                 'ignored_tags' => ['todo', 'noinspection', 'psalm-suppress'],
             ],
+            'phpdoc_types_order' => [
+                'sort_algorithm' => 'none',
+                'null_adjustment' => 'always_last',
+            ],
         ];
     }
 
