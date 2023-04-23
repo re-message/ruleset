@@ -65,6 +65,7 @@ class Config extends ParentConfig
             'array_syntax' => ['syntax' => 'short'],
             'concat_space' => ['spacing' => 'one'],
             'php_unit_fqcn_annotation' => false,
+            'php_unit_test_class_requires_covers' => false,
             'php_unit_test_case_static_method_calls' => ['call_type' => 'self'],
             'phpdoc_tag_type' => [
                 'tags' => ['inheritDoc' => 'annotation'],
