@@ -81,7 +81,7 @@ class Config extends ParentConfig
                 'ignored_tags' => ['todo', 'noinspection', 'psalm-suppress'],
             ],
             'phpdoc_types_order' => [
-                'sort_algorithm' => 'none',
+                'sort_algorithm' => 'alpha',
                 'null_adjustment' => 'always_last',
             ],
         ];
