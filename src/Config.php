@@ -43,7 +43,7 @@ class Config extends ParentConfig
     protected function getDefaultRules(): array
     {
         return [
-            '@PSR12' => true,
+            '@PER-CS' => true,
             '@PhpCsFixer' => true,
             '@Symfony' => true,
             '@DoctrineAnnotation' => true,
