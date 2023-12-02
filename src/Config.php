@@ -48,7 +48,7 @@ class Config extends ParentConfig
             '@Symfony' => true,
             '@DoctrineAnnotation' => true,
             '@PHP80Migration:risky' => true,
-            '@PHP82Migration' => true,
+            '@PHP83Migration' => true,
             'global_namespace_import' => [
                 'import_classes' => true,
                 'import_constants' => true,
