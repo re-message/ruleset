@@ -57,7 +57,6 @@ class Config extends ParentConfig
             'ordered_imports' => [
                 'sort_algorithm' => 'alpha',
                 'imports_order' => ['class', 'function', 'const'],
-                'null_adjustment' => 'always_last',
             ],
             'ordered_types' => [
                 'sort_algorithm' => 'alpha',
