@@ -59,6 +59,10 @@ class Config extends ParentConfig
                 'imports_order' => ['class', 'function', 'const'],
                 'null_adjustment' => 'always_last',
             ],
+            'ordered_types' => [
+                'sort_algorithm' => 'alpha',
+                'null_adjustment' => 'always_last',
+            ],
             'declare_strict_types' => false,
             'ordered_class_elements' => false,
             'no_superfluous_phpdoc_tags' => false,
