@@ -1,17 +1,15 @@
 <?php
 /*
- * This file is a part of Re Message PHP CS Fixer rule set.
- * This package is a part of Re Message.
+ * This file is part of the Re Message PHP CS Fixer rule set.
  *
- * @link      https://github.com/re-message/ruleset
- * @link      https://dev.remessage.ru/packages/ruleset
- * @copyright Copyright (c) 2018-2023 Re Message
- * @author    Oleg Kozlov <h1karo@remessage.ru>
- * @license   Apache License 2.0
- * @license   https://legal.remessage.ru/licenses/ruleset
+ * (c) 2018-present Re Message
+ *     Oleg Kozlov <h1karo@remessage.ru>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
+ *
+ * https://dev.remessage.ru/packages/ruleset
+ * https://github.com/re-message/ruleset
  */
 
 namespace RM\Style\RuleSet;

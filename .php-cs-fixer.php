@@ -1,17 +1,15 @@
 <?php
 /*
- * This file is a part of Re Message PHP CS Fixer rule set.
- * This package is a part of Re Message.
+ * This file is part of the Re Message PHP CS Fixer rule set.
  *
- * @link      https://github.com/re-message/ruleset
- * @link      https://dev.remessage.ru/packages/ruleset
- * @copyright Copyright (c) 2018-2023 Re Message
- * @author    Oleg Kozlov <h1karo@remessage.ru>
- * @license   Apache License 2.0
- * @license   https://legal.remessage.ru/licenses/ruleset
+ * (c) 2018-present Re Message
+ *     Oleg Kozlov <h1karo@remessage.ru>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
+ *
+ * https://dev.remessage.ru/packages/ruleset
+ * https://github.com/re-message/ruleset
  */
 
 $finder = PhpCsFixer\Finder::create()
@@ -21,23 +19,20 @@ $finder = PhpCsFixer\Finder::create()
 ;
 
 $namespace = 'Re Message';
-$projectTitle = 'Re Message PHP CS Fixer rule set';
+$projectTitle = 'the Re Message PHP CS Fixer rule set';
 $projectName = 'ruleset';
-$currentYear = date('Y');
 
 $header = <<<EOF
-    This file is a part of {$projectTitle}.
-    This package is a part of {$namespace}.
+    This file is part of {$projectTitle}.
 
-    @link      https://github.com/re-message/{$projectName}
-    @link      https://dev.remessage.ru/packages/{$projectName}
-    @copyright Copyright (c) 2018-{$currentYear} {$namespace}
-    @author    Oleg Kozlov <h1karo@remessage.ru>
-    @license   Apache License 2.0
-    @license   https://legal.remessage.ru/licenses/{$projectName}
+    (c) 2018-present {$namespace}
+        Oleg Kozlov <h1karo@remessage.ru>
 
     For the full copyright and license information, please view the LICENSE
     file that was distributed with this source code.
+
+    https://dev.remessage.ru/packages/{$projectName}
+    https://github.com/re-message/{$projectName}
     EOF;
 
 $config = new RM\Style\RuleSet\Config();
