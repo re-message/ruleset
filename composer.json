@@ -3,7 +3,7 @@
     "description": "PHP CS Fixer rule set",
     "type": "project",
     "license": "Apache-2.0",
-    "homepage": "https://remessage.ru/",
+    "homepage": "https://dev.remessage.ru/packages/ruleset",
     "authors": [
         {
             "name": "Oleg Kozlov",
