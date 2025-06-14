@@ -13,10 +13,12 @@
  * https://github.com/re-message/ruleset
  */
 
+use PhpCsFixer\Finder;
+use PhpCsFixer\Runner\Parallel\ParallelConfigFactory;
 use RM\Style\RuleSet\Config;
 use RM\Style\RuleSet\Header;
 
-$finder = PhpCsFixer\Finder::create()
+$finder = Finder::create()
     ->in(__DIR__)
     ->append([__FILE__])
     ->exclude('vendor')
@@ -32,4 +34,5 @@ $header = new Header()
 return new Config()
     ->setHeader($header)
     ->setFinder($finder)
+    ->setParallelConfig(ParallelConfigFactory::detect())
 ;
