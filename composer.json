@@ -26,7 +26,6 @@
     },
     "scripts": {
         "psalm": "psalm",
-        "test": "phpunit --testdox",
         "lint": "PHP_CS_FIXER_IGNORE_ENV=true php-cs-fixer fix --show-progress=dots"
     },
     "config": {
