@@ -28,6 +28,7 @@ class Config extends ParentConfig
         // remove default rules
         $this->setRules([]);
         $this->setRiskyAllowed(true);
+        $this->registerCustomFixers([new NoDebugStatement()]);
     }
 
     public function getRules(): array
@@ -84,6 +85,7 @@ class Config extends ParentConfig
                 'sort_algorithm' => 'alpha',
                 'null_adjustment' => 'always_last',
             ],
+            NoDebugStatement::NAME => true,
         ];
     }
 
