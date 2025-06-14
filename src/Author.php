@@ -23,8 +23,7 @@ final readonly class Author implements Stringable
     public function __construct(
         public string $name,
         public ?string $email = null,
-    ) {
-    }
+    ) {}
 
     #[Override]
     public function __toString(): string

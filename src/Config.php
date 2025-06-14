@@ -43,10 +43,10 @@ class Config extends ParentConfig
     protected function getDefaultRules(): array
     {
         return [
+            '@Symfony' => true,
+            '@PhpCsFixer' => true,
             '@PER-CS' => true,
             '@PER-CS:risky' => true,
-            '@PhpCsFixer' => true,
-            '@Symfony' => true,
             '@PHP82Migration:risky' => true,
             '@PHP84Migration' => true,
             'global_namespace_import' => [

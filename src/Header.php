@@ -61,7 +61,7 @@ class Header implements Stringable
 
     private function getAuthors(): string
     {
-        $indent = fn (string $value) => str_repeat(' ', 4) . $value;
+        $indent = fn(string $value) => str_repeat(' ', 4) . $value;
 
         return implode(PHP_EOL, array_map($indent, $this->authors));
     }
