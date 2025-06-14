@@ -44,9 +44,10 @@ class Config extends ParentConfig
     {
         return [
             '@PER-CS' => true,
+            '@PER-CS:risky' => true,
             '@PhpCsFixer' => true,
             '@Symfony' => true,
-            '@PHP80Migration:risky' => true,
+            '@PHP82Migration:risky' => true,
             '@PHP84Migration' => true,
             'global_namespace_import' => [
                 'import_classes' => true,
