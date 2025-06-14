@@ -1,4 +1,5 @@
 <?php
+
 /*
  * This file is part of the Re Message PHP CS Fixer rule set.
  *
@@ -18,7 +19,7 @@ use PhpCsFixer\Config as ParentConfig;
 
 class Config extends ParentConfig
 {
-    private ?string $header = null;
+    private ?Header $header = null;
 
     public function __construct()
     {
@@ -66,6 +67,7 @@ class Config extends ParentConfig
             'strict_param' => true,
             'array_syntax' => ['syntax' => 'short'],
             'concat_space' => ['spacing' => 'one'],
+            'blank_line_after_opening_tag' => true,
             'php_unit_fqcn_annotation' => false,
             'php_unit_test_class_requires_covers' => false,
             'php_unit_test_case_static_method_calls' => ['call_type' => 'self'],
@@ -93,7 +95,7 @@ class Config extends ParentConfig
 
         return [
             'header_comment' => [
-                'header' => $this->header,
+                'header' => (string) $this->header,
                 'comment_type' => 'comment',
                 'location' => 'after_open',
                 'separate' => 'bottom',
@@ -101,7 +103,7 @@ class Config extends ParentConfig
         ];
     }
 
-    public function setHeader(?string $header): static
+    public function setHeader(Header $header): static
     {
         $this->header = $header;
 

@@ -1,4 +1,5 @@
 <?php
+
 /*
  * This file is part of the Re Message PHP CS Fixer rule set.
  *
@@ -12,32 +13,23 @@
  * https://github.com/re-message/ruleset
  */
 
+use RM\Style\RuleSet\Config;
+use RM\Style\RuleSet\Header;
+
 $finder = PhpCsFixer\Finder::create()
     ->in(__DIR__)
     ->append([__FILE__])
     ->exclude('vendor')
 ;
 
-$namespace = 'Re Message';
-$projectTitle = 'the Re Message PHP CS Fixer rule set';
-$projectName = 'ruleset';
+$header = new Header()
+    ->setNamespace('Re Message')
+    ->setProjectName('ruleset')
+    ->setProjectTitle('the Re Message PHP CS Fixer rule set')
+    ->withAuthor('Oleg Kozlov', 'h1karo@remessage.ru')
+;
 
-$header = <<<EOF
-    This file is part of {$projectTitle}.
-
-    (c) 2018-present {$namespace}
-        Oleg Kozlov <h1karo@remessage.ru>
-
-    For the full copyright and license information, please view the LICENSE
-    file that was distributed with this source code.
-
-    https://dev.remessage.ru/packages/{$projectName}
-    https://github.com/re-message/{$projectName}
-    EOF;
-
-$config = new RM\Style\RuleSet\Config();
-
-return $config
+return new Config()
     ->setHeader($header)
     ->setFinder($finder)
 ;
