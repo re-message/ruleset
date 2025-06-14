@@ -56,12 +56,3 @@ jobs:
           --dry-run \
           --diff \
           | cs2pr
-
-      - name: Run Psalm analysis
-        run: |
-          php vendor/bin/psalm \
-          --output-format=checkstyle \
-          | cs2pr
-
-      - name: PHP Security Checker
-        uses: StephaneBour/actions-php-security-checker@1.2

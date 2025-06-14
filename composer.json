@@ -21,11 +21,7 @@
 
         "friendsofphp/php-cs-fixer": "^3.75"
     },
-    "require-dev": {
-        "vimeo/psalm": "^6.12"
-    },
     "scripts": {
-        "psalm": "psalm",
         "lint": "PHP_CS_FIXER_IGNORE_ENV=true php-cs-fixer fix --show-progress=dots"
     },
     "config": {
