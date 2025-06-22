@@ -63,13 +63,8 @@ class Config extends ParentConfig
                 'null_adjustment' => 'always_last',
             ],
             'declare_strict_types' => false,
-            'ordered_class_elements' => false,
-            'no_superfluous_phpdoc_tags' => false,
             'strict_param' => true,
-            'array_syntax' => ['syntax' => 'short'],
-            'concat_space' => ['spacing' => 'one'],
             'blank_line_after_opening_tag' => true,
-            'php_unit_fqcn_annotation' => false,
             'php_unit_test_class_requires_covers' => false,
             'php_unit_test_case_static_method_calls' => ['call_type' => 'self'],
             'phpdoc_tag_type' => [
