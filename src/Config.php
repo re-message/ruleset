@@ -68,7 +68,7 @@ class Config extends ParentConfig
             'php_unit_test_class_requires_covers' => false,
             'php_unit_test_case_static_method_calls' => ['call_type' => 'self'],
             'phpdoc_to_comment' => [
-                'ignored_tags' => ['todo', 'noinspection', 'psalm-suppress'],
+                'ignored_tags' => ['noinspection', 'psalm-suppress'],
             ],
             'phpdoc_types_order' => [
                 'sort_algorithm' => 'alpha',
