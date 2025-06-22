@@ -67,12 +67,6 @@ class Config extends ParentConfig
             'blank_line_after_opening_tag' => true,
             'php_unit_test_class_requires_covers' => false,
             'php_unit_test_case_static_method_calls' => ['call_type' => 'self'],
-            'phpdoc_tag_type' => [
-                'tags' => ['inheritDoc' => 'annotation'],
-            ],
-            'phpdoc_tag_casing' => [
-                'tags' => ['inheritDoc'],
-            ],
             'phpdoc_to_comment' => [
                 'ignored_tags' => ['todo', 'noinspection', 'psalm-suppress'],
             ],
